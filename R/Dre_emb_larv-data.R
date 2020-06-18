@@ -1,4 +1,4 @@
-#' Dre_embryo
+#' Dre_emb_larv
 #' 
 #' Transcriptomic data from *D. rerio* egg to larval samples.
 #' 
@@ -19,4 +19,4 @@
 #' 
 #' 
 #' @importFrom Rdpack reprompt
-"Dre_embryo"
+"Dre_emb_larv"
