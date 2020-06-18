@@ -75,7 +75,7 @@ nc <- sum(pca$importance[3,] < .95) + 1
 
 Dre_emb_larv <- list(g = gdat, p = p, 
                      geim_params = list(
-                       formula = "X~s(age_hr, bs='cr')",
+                       formula = "X~s(age, bs='cr')",
                        method = "gam",
                        dim_red = "pca",
                        nc = nc
