@@ -1,0 +1,10 @@
+name,tstart,tend,tunit
+unfertilised egg,0,0.25,hours post-fertilization
+zygote,0.25,0.75,hours post-fertilization
+cleavage,0.75,2.25,hours post-fertilization
+blastula,2.25,5.33,hours post-fertilization
+gastrula,5.33,10.33,hours post-fertilization
+segmentation,10.33,25,hours post-fertilization
+pharyngula,25,48,hours post-fertilization
+hatching,48,96,hours post-fertilization
+larva,96,1080,hours post-fertilization
