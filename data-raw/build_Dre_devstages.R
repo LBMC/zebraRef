@@ -15,6 +15,6 @@ Dre_devstages <- list(
 
 save("Dre_devstages", file = "data/Dre_devstages.RData")
 
-rm(devstages_s, devst,
+rm(devst,
    datasets_s, dss,
    Dre_devstages)
