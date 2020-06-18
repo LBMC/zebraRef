@@ -21,15 +21,15 @@ NULL
 .prepref_Dre_emb_larv <- function(n.inter){
   # utils::data("Dre_emb_larv", envir = environment())
   m <- RAPToR::ge_im(
-    X = drosoRef::Dre_emb_larv$g,
-    p = drosoRef::Dre_emb_larv$p,
-    formula = drosoRef::Dre_emb_larv$geim_params$formula,
-    method = drosoRef::Dre_emb_larv$geim_params$method,
-    dim_red = drosoRef::Dre_emb_larv$geim_params$dim_red,
-    nc = drosoRef::Dre_emb_larv$geim_params$nc
+    X = zebraRef::Dre_emb_larv$g,
+    p = zebraRef::Dre_emb_larv$p,
+    formula = zebraRef::Dre_emb_larv$geim_params$formula,
+    method = zebraRef::Dre_emb_larv$geim_params$method,
+    dim_red = zebraRef::Dre_emb_larv$geim_params$dim_red,
+    nc = zebraRef::Dre_emb_larv$geim_params$nc
   )
-  ndat <- data.frame(age = seq(min(drosoRef::Dre_emb_larv$p$age),
-                               max(drosoRef::Dre_emb_larv$p$age),
+  ndat <- data.frame(age = seq(min(zebraRef::Dre_emb_larv$p$age),
+                               max(zebraRef::Dre_emb_larv$p$age),
                                l = n.inter))
   return(
     list(interpGE = predict(m, ndat), time.series = ndat$age)
