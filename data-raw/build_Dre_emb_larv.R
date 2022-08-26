@@ -78,8 +78,13 @@ Dre_emb_larv <- list(g = gdat, p = p,
                        formula = "X~s(age, bs='cr')",
                        method = "gam",
                        dim_red = "pca",
-                       nc = nc
-                     ))
+                       nc = nc),
+                     t.unit = "h post fertilization",
+                     cov.levels = NULL,
+                     metadata = list("organism" = "D. rerio",
+                                     "profiling" = "whole-organism, bulk",
+                                     "technology" = "Microarray")
+)
 
 save("Dre_emb_larv", file = "data/Dre_emb_larv.RData", compress = "xz")
 rm(pdat, gdat, p, 
