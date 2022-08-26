@@ -1,2 +1,2 @@
-name,organism,description
-Dre_emb_larv,Danio rerio,Embryonic and larval development reference series from unfertilized egg to 1080 hpf
+name,organism,description,range
+Dre_emb_larv,Danio rerio,Embryonic and larval development, unfertilized egg(0) to 1080 h post-fertilization
