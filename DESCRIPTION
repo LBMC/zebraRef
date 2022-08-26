@@ -10,7 +10,7 @@ Description: zebraRef is a data package that holds the zebrafish reference data 
   This corresponds to D. rerio embryonic and larval development up to hatching, for the moment. 
   The package also holds the `prep_x` functions, internally called by the RAPToR package for interpolation.
 Depends: 
-  R (>= 3.4.0)
+  R (>= 3.5.0)
 Imports:
   RAPToR (>= 1.2.0),
   Rdpack,
@@ -26,4 +26,4 @@ Suggests:
   ggplot2
 RdMacros: Rdpack
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.0
+RoxygenNote: 7.2.0

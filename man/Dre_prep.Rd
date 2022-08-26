@@ -2,13 +2,16 @@
 % Please edit documentation in R/prepref_Dre.R
 \name{Dre_prep}
 \alias{Dre_prep}
+\alias{.prepref_skel}
 \alias{.prepref_Dre_emb_larv}
 \title{Build Interpolated Gene Expression References}
 \usage{
-.prepref_Dre_emb_larv(n.inter)
+.prepref_skel(data, from = NULL, to = NULL)
+
+.prepref_Dre_emb_larv(n.inter = NULL, by.inter = NULL)
 }
 \arguments{
-\item{n.inter}{the resolution of the interpolation, as in \code{seq(start, end, length.out = n.inter)}.}
+\item{n.inter, by.inter}{the resolution of the interpolation, as in \code{seq(start, end, length.out = n.inter)} or \code{seq(start, end, by = by.inter)}.}
 }
 \value{
 A list with \code{interpGE} the interpolated gene expression matrix and
@@ -19,5 +22,5 @@ Builds the interpolation of the reference datasets.
 \strong{These functions are internally called by \code{\link[RAPToR]{prepare_refdata}} from RAPToR.}
 }
 \seealso{
-\code{\link[RAPToR]{prepare_refdata}} \code{\link[RAPToR]{ge_im}}
+\code{\link[RAPToR]{prepare_refdata}} \code{\link[RAPToR]{ge_im}} \code{\link[RAPToR]{make_ref}}
 }
